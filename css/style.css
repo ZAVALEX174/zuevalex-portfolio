@@ -37,7 +37,6 @@ body {
   padding: 0 15px;
   width: 100%;
   max-width: 1280px;
-  border: 1px solid #614fd0;
 }
 
 .header {
@@ -51,7 +50,7 @@ body {
 }
 .header.sticky {
   background-color: rgba(225, 225, 225, 0.1);
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 .header .logo {
   color: #0e2431;
@@ -91,6 +90,110 @@ body {
 }
 .nav-menu-btn {
   display: none;
+}
+
+.home {
+  padding: 80px 0;
+  min-height: 100vh;
+  position: relative;
+}
+.home-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+.home .media-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.home .media-icons a {
+  color: #6a59d1;
+  font-size: 32px;
+  transition: color 0.3s linear;
+}
+.home .media-icons a:hover {
+  color: #614fd0;
+  transition: color 0.3s linear;
+}
+.home-info h1 {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.home-info h3 {
+  color: #777;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 2;
+}
+.home-info p {
+  font-size: 16px;
+  color: #777;
+  width: 100%;
+  max-width: 350px;
+  margin-bottom: 30px;
+}
+.home-info-link {
+  display: inline-block;
+  padding: 20px 30px;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  background-color: #6a59d1;
+  color: #fff;
+  transform: scale(100%);
+  transition: background-color 0.3s linear, color 0.3s linear, transform 0.3s linear;
+  font-size: 16px;
+  font-weight: 500;
+}
+.home-info-link i {
+  vertical-align: middle;
+  transform: translateX(0);
+  transition: transform 0.3s linear;
+}
+.home-info-link:hover {
+  transform: scale(99%);
+  background-color: #614fd0;
+  transition: background-color 0.3s linear, color 0.3s linear, transform 0.3s linear;
+}
+.home-info-link:hover i {
+  transform: translateX(2px);
+  transition: transform 0.3s linear;
+}
+.home-img img {
+  width: 90%;
+}
+.home .scroll-down {
+  max-width: 200px;
+  text-align: center;
+  display: block;
+  margin: auto auto 0;
+  color: #0e2431;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s linear, transform 0.3s linear;
+}
+.home .scroll-down:hover {
+  color: #6a59d1;
+  transition: color 0.3s linear, transform 0.3s linear;
+}
+.home .scroll-down i {
+  margin-left: 10px;
+  color: #6a59d1;
+  font-size: 18px;
+  animation: topdown linear 1s infinite;
+}
+
+@keyframes topdown {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(5px);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
