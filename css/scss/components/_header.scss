@@ -1,3 +1,29 @@
+@use "../var" as v;
+
 .header {
   width: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(20px);
+  transition: .6s linear;
+
+  &.sticky {
+    background-color: rgba(225, 225, 225, .1);
+    box-shadow: v.$box-shadow;
+  }
+
+  & .logo {
+    color: v.$first-color;
+    margin-right: auto;
+  }
+
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+    transition: .6s linear;
+  }
 }

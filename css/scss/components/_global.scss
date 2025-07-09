@@ -1,0 +1,30 @@
+@use "../var" as v;
+
+html {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  font-size: 16px;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  color: v.$first-color;
+  background-color: v.$body-bg-color;
+  overflow-x: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  //  max-width: 94.5%;
+  width: 100%;
+  max-width: 1280px;
+  border: 1px solid v.$hover-color;
+}

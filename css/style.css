@@ -12,8 +12,85 @@
   /*=======Scroll bar colors=======*/
 }
 
+html {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  font-size: 16px;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  color: #0e2431;
+  background-color: #fefefe;
+  overflow-x: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+  max-width: 1280px;
+  border: 1px solid #614fd0;
+}
+
 .header {
   width: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(20px);
+  transition: 0.6s linear;
+}
+.header.sticky {
+  background-color: rgba(225, 225, 225, 0.1);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+.header .logo {
+  color: #0e2431;
+  margin-right: auto;
+}
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 0;
+  transition: 0.6s linear;
+}
+
+.logo {
+  font-weight: 600;
+}
+
+.nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.nav-menu {
+  display: flex;
+  gap: 50px;
+}
+.nav-link {
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #0e2431;
+  font-size: 16px;
+  transition: 0.3s linear;
+}
+.nav-link.active, .nav-link:hover {
+  color: #6a59d1;
+  transition: 0.3s linear;
+}
+.nav-menu-btn {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

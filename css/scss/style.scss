@@ -1,2 +1,5 @@
-@use "components/var.scss" as *;
+@use "var" as *;
+@use "components/global" as *;
 @use "components/header" as *;
+@use "components/logo" as *;
+@use "components/nav" as *;
