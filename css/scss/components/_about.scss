@@ -1,0 +1,74 @@
+@use "../var" as v;
+
+.about {
+
+  &-wrapper {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+
+  &-img {
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+
+  &-info {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  & .description {
+
+    & h3 {
+      font-size: 32px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    & h4 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 10px;
+
+      & span {
+        color: v.$second-color;
+      }
+
+    }
+
+    & p {
+      color: v.$third-color;
+      font-size: v.$normal-font-size;
+      margin-bottom: 15px;
+      padding-bottom: 15px;
+      border-bottom: 2px solid v.$liner-color;
+    }
+  }
+
+  & .professional-list {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+
+    & .list-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 15px;
+      margin-bottom: 20px;
+
+      & .number {
+        font-size: 40px;
+        font-weight: 700;
+      }
+
+      & .text {
+        color: v.$third-color;
+        font-size: v.$small-font-size;
+      }
+    }
+  }
+}

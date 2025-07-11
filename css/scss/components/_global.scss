@@ -29,3 +29,77 @@ body {
   max-width: 1280px;
   //  border: 1px solid v.$hover-color;
 }
+
+.inner-info-link {
+  display: inline-block;
+  padding: 20px 30px;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  background-color: v.$second-color;
+  color: #fff;
+  transform: scale(100%);
+  transition: background-color 0.3s linear, color 0.3s linear, transform 0.3s linear;
+  font-size: v.$normal-font-size;
+  font-weight: 500;
+
+  i {
+    vertical-align: middle;
+    transform: translateX(0);
+    transition: transform 0.3s linear;
+  }
+
+  &:hover {
+    transform: scale(99%);
+    background-color: v.$hover-color;
+    transition: background-color 0.3s linear, color 0.3s linear, transform 0.3s linear;
+
+    i {
+      transform: translateX(2px);
+      transition: transform 0.3s linear;
+    }
+  }
+}
+
+.section {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 0 20px;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inner-title {
+  font-size: 60px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  background: linear-gradient(to top, transparent 0%, v.$first-color 70%);
+  -webkit-background-clip: text; /* Правильный префикс */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  opacity: 0.1;
+}
+
+.inner-second-title {
+  position: relative;
+  font-size: 25px;
+  font-weight: 700;
+  transform: translateY(-55px);
+
+  &::after {
+    content: "";
+    position: absolute;
+    //    width: 70px;
+    width: 65%;
+    display: block;
+    height: 5px;
+    right: 0;
+    bottom: 0;
+    background-color: v.$second-color;
+  }
+}
