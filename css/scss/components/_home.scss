@@ -54,35 +54,24 @@
       margin-bottom: 30px;
     }
 
-    &-link {
-      display: inline-block;
-      padding: 20px 30px;
-      letter-spacing: 1px;
-      border-radius: 8px;
-      background-color: v.$second-color;
-      color: #fff;
-      transform: scale(100%);
-      transition: background-color 0.3s linear, color 0.3s linear, transform 0.3s linear;
-      font-size: v.$normal-font-size;
-      font-weight: 500;
-
-      i {
-        vertical-align: middle;
-        transform: translateX(0);
-        transition: transform 0.3s linear;
-      }
-
-      &:hover {
-        transform: scale(99%);
-        background-color: v.$hover-color;
-        transition: background-color 0.3s linear, color 0.3s linear, transform 0.3s linear;
-
-        i {
-          transform: translateX(2px);
-          transition: transform 0.3s linear;
-        }
-      }
-    }
+    //    &-link {
+    //      i {
+    //        vertical-align: middle;
+    //        transform: translateX(0);
+    //        transition: transform 0.3s linear;
+    //      }
+    //
+    //      &:hover {
+    //        transform: scale(99%);
+    //        background-color: v.$hover-color;
+    //        transition: background-color 0.3s linear, color 0.3s linear, transform 0.3s linear;
+    //
+    //        i {
+    //          transform: translateX(2px);
+    //          transition: transform 0.3s linear;
+    //        }
+    //      }
+    //    }
   }
 
   &-img {
