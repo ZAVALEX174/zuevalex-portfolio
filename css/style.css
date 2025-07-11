@@ -396,5 +396,54 @@ body {
 .skills .education .bar .line.php::before {
   width: 45%;
 }
+.skills .work-exp {
+  width: 100%;
+  max-width: 100%;
+}
+.skills .work-exp-title {
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+.skills .work-exp .experience-card {
+  min-width: 320px;
+  width: 32%;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 6px;
+  border-bottom: 3px solid #6a59d1;
+  transition: 0.3s linear;
+}
+.skills .work-exp .experience-card .upper h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.skills .work-exp .experience-card .upper h5 {
+  font-size: 14px;
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+.skills .work-exp .experience-card .upper span {
+  display: block;
+  color: #777;
+  margin-bottom: 10px;
+}
+.skills .work-exp .experience-card .upper .hr {
+  height: 2px;
+  width: 100%;
+  background-color: #d7d7d7;
+  margin-bottom: 20px;
+}
+.skills .work-exp .experience-card .label {
+  margin-bottom: 20px;
+}
+
+.experience-card:hover, .education-list .item:hover, .bar:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+  transition: 0.3s linear;
+}
 
 /*# sourceMappingURL=style.css.map */

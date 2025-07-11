@@ -129,4 +129,61 @@
       }
     }
   }
+
+  & .work-exp {
+    width: 100%;
+    max-width: 100%;
+
+    &-title {
+      font-size: 30px;
+      margin-bottom: 50px;
+    }
+
+    & .experience-card {
+      min-width: 320px;
+      width: 32%;
+      background-color: #fff;
+      box-shadow: v.$box-shadow;
+      padding: 20px;
+      border-radius: 6px;
+      border-bottom: 3px solid v.$second-color;
+      transition: .3s linear;
+
+      & .upper h3 {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+
+      & .upper h5 {
+        font-size: v.$small-font-size;
+        font-weight: 500;
+        font-style: italic;
+        margin-bottom: 5px;
+      }
+
+      & .upper span {
+        display: block;
+        color: v.$third-color;
+        margin-bottom: 10px;
+      }
+
+      & .upper .hr {
+        height: 2px;
+        width: 100%;
+        background-color: v.$liner-color;
+        margin-bottom: 20px;
+      }
+
+      & .label {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.experience-card:hover, .education-list .item:hover, .bar:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+  transition: .3s linear;
 }
