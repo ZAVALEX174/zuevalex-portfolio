@@ -585,4 +585,8 @@ body {
   transform: translateY(0);
 }
 
+.portfolio {
+  width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */
