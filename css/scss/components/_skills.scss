@@ -2,6 +2,10 @@
 
 .skills {
 
+  .inner-content {
+    width: 100%;
+  }
+
   &-description {
     width: 100%;
     max-width: 700px;
@@ -19,16 +23,17 @@
 
   &-info {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    //    display: flex;
+    //    flex-wrap: wrap;
+    //    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 21px;
     margin-bottom: 24px;
   }
 
   .education {
-    min-width: 320px;
-    width: 32%;
+    width: 100%;
 
     & .label {
       display: inline-block;
@@ -140,8 +145,7 @@
     }
 
     & .experience-card {
-      min-width: 320px;
-      width: 32%;
+      width: 100%;
       background-color: #fff;
       box-shadow: v.$box-shadow;
       padding: 20px;
