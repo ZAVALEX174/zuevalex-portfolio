@@ -715,4 +715,53 @@ body {
   transition: 0.3s linear;
 }
 
+.get-in-touch {
+  padding: 60px 20px;
+}
+.get-in-touch .contact-card {
+  position: relative;
+  display: flex;
+  column-gap: 50px;
+  border-radius: 6px;
+  padding: 50px;
+  width: 90%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.get-in-touch .title {
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+.get-in-touch .title h2 {
+  font-size: 72px;
+  font-weight: 700;
+  background: linear-gradient(to top, transparent 0%, #0e2431 60%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  opacity: 0.9;
+  line-height: 1;
+}
+.get-in-touch .title h3 {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1;
+}
+.get-in-touch .title h4 {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.sub-section {
+  position: relative;
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
 /*# sourceMappingURL=style.css.map */
