@@ -19,6 +19,10 @@
           gap: 50px;
           margin: 20px 0;
 
+          @media screen and (max-width: 768px) {
+            flex-direction: column;
+          }
+
           & .client-img {
             width: 250px;
             height: 250px;
@@ -78,6 +82,10 @@
           color: v.$first-color;
           transition: 0.3s linear;
         }
+
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
       }
 
       & .swiper-button-next {
@@ -99,6 +107,10 @@
         &:hover i {
           color: v.$first-color;
           transition: 0.3s linear;
+        }
+
+        @media screen and (max-width: 768px) {
+          display: none;
         }
       }
 

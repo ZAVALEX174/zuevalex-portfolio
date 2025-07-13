@@ -12,6 +12,10 @@
     gap: 30px;
     margin-bottom: 20px;
     min-height: 80vh;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
   }
 
   & .media-icons {
@@ -19,6 +23,11 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
+
+    @media screen and (max-width: 768px) {
+      order: 3;
+      flex-direction: row;
+    }
 
     & a {
       color: v.$second-color;
@@ -34,10 +43,18 @@
 
   &-info {
 
+    @media screen and (max-width: 768px) {
+      order: 2;
+    }
+
     & h1 {
       font-size: 60px;
       font-weight: 600;
       line-height: 1.2;
+
+      @media screen and (max-width: 768px) {
+        font-size: 36px;
+      }
     }
 
     & h3 {
@@ -57,6 +74,11 @@
   }
 
   &-img {
+
+    @media screen and (max-width: 768px) {
+      order: 1;
+    }
+
     & img {
       width: 90%;
     }
@@ -71,6 +93,10 @@
     font-size: v.$normal-font-size;
     font-weight: 500;
     transition: color 0.3s linear, transform 0.3s linear;
+
+    @media screen and (max-width: 768px) {
+      order: 4;
+    }
 
     &:hover {
       color: v.$second-color;

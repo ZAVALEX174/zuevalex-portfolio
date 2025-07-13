@@ -37,7 +37,6 @@ body {
   border-radius: 8px;
   background-color: v.$second-color;
   color: #fff;
-  transform: scale(100%);
   transition: background-color 0.3s linear, color 0.3s linear, transform 0.3s linear;
   font-size: v.$normal-font-size;
   font-weight: 500;
@@ -49,7 +48,6 @@ body {
   }
 
   &:hover {
-    transform: scale(99%);
     background-color: v.$hover-color;
     transition: background-color 0.3s linear, color 0.3s linear, transform 0.3s linear;
 
@@ -84,6 +82,8 @@ body {
   -webkit-text-fill-color: transparent;
   color: transparent;
   opacity: 0.1;
+  line-height: 1;
+  text-align: center;
 }
 
 .inner-second-title {
