@@ -67,4 +67,28 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     })
   })
+
+  // swiper
+
+  const swiper = new Swiper('.mySwiper', {
+    // Optional parameters
+    cssMode: true,
+    loop: true,
+    mousewheel: true,
+    keyboard: true,
+    slidesPerView: 1,
+    spaceBetween: 30,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }
+  });
 })
