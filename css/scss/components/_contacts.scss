@@ -1,0 +1,153 @@
+@use "../var" as v;
+
+.contact {
+
+  &-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+
+    @media screen and (max-width: 998px) {
+      flex-direction: column;
+    }
+  }
+
+  &-left {
+    width: 50%;
+
+    @media screen and (max-width: 998px) {
+      width: 100%;
+    }
+
+    & h2 {
+      font-size: 32px;
+      font-weight: 800;
+      margin-bottom: 40px;
+      //      color: v.$
+    }
+
+    & .contact-list {
+
+      & li {
+        margin-bottom: 40px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        & h3 {
+          font-size: 22px;
+          font-weight: 600;
+          margin-bottom: 5px;
+
+          & i {
+            line-height: 30px;
+            width: 30px;
+            font-size: 30px;
+            color: v.$second-color;
+            margin-right: 10px;
+          }
+        }
+
+        & span {
+          color: v.$third-color;
+          margin-left: 45px;
+          transition: 0.3s linear;
+
+          & a {
+            color: inherit;
+          }
+
+          &:hover {
+            color: v.$hover-color;
+            transition: 0.3s linear;
+          }
+        }
+      }
+    }
+  }
+
+  &-right {
+    width: 50%;
+
+    @media screen and (max-width: 998px) {
+      width: 100%;
+    }
+
+    & p {
+      font-size: 28px;
+      margin-bottom: 30px;
+      color: v.$third-color;
+
+      & span {
+        display: block;
+        font-weight: 700;
+        color: v.$first-color;
+      }
+    }
+
+    & .form.contact-form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      //      gap: 25px;
+
+      & input, & textarea {
+        border: none;
+        margin-bottom: 20px;
+        padding: 15px 20px 15px;
+        line-height: 1;
+        color: v.$first-color;
+        font-size: v.$normal-font-size;
+        border-radius: 6px;
+        background-color: v.$bg-transparent-color-02;
+      }
+
+      & input::placeholder, & textarea::placeholder {
+        font-size: v.$normal-font-size;
+        line-height: 1;
+        color: v.$third-color;
+      }
+
+      & input:focus-visible, & textarea:focus-visible, & input:active, & textarea:active {
+        outline-color: v.$second-color;
+
+      }
+
+      & .first-row {
+        width: 100%;
+
+
+        & input {
+          width: 100%;
+        }
+      }
+
+      & .second-row {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        & input {
+          width: 100%;
+        }
+      }
+
+      & .third-row {
+        width: 100%;
+
+        & textarea {
+          width: 100%;
+          resize: none;
+        }
+      }
+
+      .contact-btn {
+        width: fit-content;
+      }
+    }
+  }
+}

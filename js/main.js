@@ -69,7 +69,6 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 
   // swiper
-
   const swiper = new Swiper('.mySwiper', {
     // Optional parameters
     cssMode: true,
