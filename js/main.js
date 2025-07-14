@@ -8,6 +8,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const openModalPortfolioBtnAll = document.querySelectorAll('.img-card');
   const closeModalPortfolioBtnAll = document.querySelectorAll('.portfolio-close');
 
+  const header = document.querySelector('.header');
+
+  // header effect scroll
+
+  window.addEventListener('scroll', () => {
+    window.scrollY > 1 ? header.classList.add('sticky') : header.classList.remove('sticky');
+  })
+
   // services modals
 
   function openModalServices(currentModalServices) {
